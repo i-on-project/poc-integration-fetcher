@@ -17,3 +17,8 @@ yarn install
 # The first argument is the URI to the integration data Git repository and the second argument is the hash of the base commit of the repository, from which changes are going to be detected
 yarn start https://github.com/i-on-project/integration-data 42c7598425e21a9eaa68e52339b9452b57f3a740
 ```
+
+To force the use of the fallback method to run the application (force the use of `libgit2` bindings) you can set the following environment variable before running the application with `yarn`:
+```sh
+export FETCHER_FORCE_FALLBACK=true
+```
